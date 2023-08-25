@@ -18,9 +18,9 @@
 				compatible = "zmk,behavior-hold-tap";
 				label = "HOMEROW_MODS";
 				#binding-cells = <2>;
-				tapping-term-ms = <150>;
+				tapping-term-ms = <200>;
 				quick-tap-ms = <0>;
-				flavor = "tap-preferred";
+				flavor = "balanced";
 				bindings = <&kp>, <&kp>;
 			};
 		};
@@ -58,12 +58,12 @@
 // |         |         |         |         |         |         |         |    =    |    7    |    8    |    9    |         |         |
 // |         |         |         |         |         |         |         |    -    |    4    |    5    |    6    |         |         |
 // |         |         |         |         |         |         |         |         |    1    |    2    |    3    |         |         |
-//                               |         |         |         |         |         |    0    |         |
+//                               |         |         |         |         |         |    0    |    .    |
                         bindings = <
    &trans    &trans    &trans    &trans    &trans    &trans              &kp EQUAL &kp N7    &kp N8    &kp N9    &trans    &trans
    &trans    &trans    &trans    &trans    &trans    &trans              &kp MINUS &kp N4    &kp N5    &kp N6    &trans    &trans
    &trans    &trans    &trans    &trans    &trans    &trans              &trans    &kp N1    &kp N2    &kp N3    &trans    &trans
-                                 &trans    &trans    &trans              &trans    &kp N0    &trans
+                                 &trans    &trans    &trans              &trans    &kp N0    &kp DOT
                         >;
                 };
                 symbol_layer {
